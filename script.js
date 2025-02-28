@@ -53,7 +53,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Braking distance: 30.5 m (100-0 km/h)",
                 "Max torque: 1100 Nm at 4000 rpm",
             ]
-        }
+        },
+        
+        "Ferrari LaFerrari": {
+            title: "Ferrari LaFerrari",
+            price: "$3,200,000",
+            description: "New Arrival",
+            fullDescription: "The LaFerrari is a limited production hybrid sports car built by Italian automotive manufacturer Ferrari. The car's name literally means 'The Ferrari' in Italian, and with just 499 produced, it represents the absolute pinnacle of Ferrari technology and performance.",
+            specs: {
+                spec1: "Gearbox: 7-speed dual-clutch automated manual",
+                spec2: "Drive Type: Rear Wheel Drive",
+                spec3: "Cylinders: V12 + Electric Motor",
+                spec4: "Max Power: 949 hp (combined)"
+            },
+            features: [
+               "Acceleration 0-100 km/h: 2.4 s",
+               "Top Speed: 350+ km/h (217+ mph)",
+               "Carbon fiber monocoque chassis",
+               "HY-KERS system for energy recovery"
+    ]
+}
     };
 
     
