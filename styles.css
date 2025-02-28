@@ -1,13 +1,14 @@
 body {
-    background-color: #ff0000; 
+    background-color: #ff0000;
     color: white;
     font-family: Arial, sans-serif;
 }
 
+/* Header Styling - Larger for desktop */
 .header-container {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 500px; /* Increased height for desktop */
     overflow: hidden;
     border-bottom: 3px solid #700000;
     background-color: #000;
@@ -15,6 +16,7 @@ body {
 
 .header-image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -33,7 +35,7 @@ body {
 }
 
 .header-title {
-    font-size: 3.5rem;
+    font-size: 4.5rem; /* Larger font for desktop */
     font-weight: bold;
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
@@ -45,35 +47,79 @@ body {
 .header-subtitle {
     color: #ff0000;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.8rem; /* Increased size */
     margin-top: -5px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
 }
 
 .header-description {
-    font-size: 0.9rem;
-    margin-top: 5px;
+    font-size: 1.2rem; /* Increased size */
+    margin-top: 10px;
     color: white;
 }
 
+/* Card Styling - Larger for desktop */
 .card {
     margin-bottom: 2rem;
     background-color: #111;
     color: white;
     border: 1px solid #333;
+    height: 100%; /* Makes all cards the same height */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.row {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.col-md-4 {
+    padding: 20px;
+}
+
+.card-img-top {
+    height: 220px; /* Fixed height for images */
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px; /* More padding inside cards */
 }
 
 .card-title {
     color: white;
+    font-size: 1.5rem; /* Larger title */
+    margin-bottom: 15px;
 }
 
 .card-text {
     color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-danger {
+    background-color: #cc0000;
+    border-color: #b00000;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 .navbar {
     margin-bottom: 0;
     background-color: #000 !important;
+    padding: 15px 0;
 }
 
 .category-tabs {
@@ -115,40 +161,58 @@ body {
     align-items: center;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .header-container {
+        height: 450px;
+    }
+    
+    .header-title {
+        font-size: 4rem;
+    }
+}
 
 @media (max-width: 992px) {
-    .header-title {
-        font-size: 3rem;
+    .header-container {
+        height: 350px;
     }
-    .header-title.secondary {
-        font-size: 2rem;
+    
+    .header-title {
+        font-size: 3.5rem;
+    }
+    
+    .header-subtitle {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .header-container {
-        height: 200px;
+        height: 250px;
     }
+    
     .header-image {
         height: 100%;
         object-position: center;
     }
+    
     .header-title {
         font-size: 2.5rem;
     }
-    .header-title.secondary {
-        font-size: 1.5rem;
-    }
+    
     .header-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .header-description {
         font-size: 1rem;
     }
-    .header-description {
-        font-size: 0.8rem;
-    }
+    
     .category-tab {
         flex-basis: 33.333%;
         border-bottom: 1px solid #700000;
     }
+    
     .category-tab:nth-child(3n) {
         border-right: none;
     }
@@ -158,24 +222,27 @@ body {
     .header-container {
         height: 180px;
     }
+    
     .header-title {
         font-size: 2rem;
     }
-    .header-title.secondary {
-        font-size: 1.2rem;
-    }
+    
     .header-subtitle {
         font-size: 0.9rem;
     }
+    
     .header-overlay {
         padding-left: 15px;
     }
+    
     .category-tab {
         flex-basis: 50%;
     }
+    
     .category-tab:nth-child(2n) {
         border-right: none;
     }
+    
     .category-tab:nth-child(3n) {
         border-right: 1px solid #700000;
     }
