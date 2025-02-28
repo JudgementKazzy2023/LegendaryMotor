@@ -4,11 +4,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header Styling - Larger for desktop */
+
 .header-container {
     position: relative;
     width: 100%;
-    height: 500px; /* Increased height for desktop */
+    height: 500px; 
     overflow: hidden;
     border-bottom: 3px solid #700000;
     background-color: #000;
@@ -35,7 +35,7 @@ body {
 }
 
 .header-title {
-    font-size: 4.5rem; /* Larger font for desktop */
+    font-size: 4.5rem; 
     font-weight: bold;
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
@@ -47,24 +47,24 @@ body {
 .header-subtitle {
     color: #ff0000;
     font-weight: bold;
-    font-size: 1.8rem; /* Increased size */
+    font-size: 1.8rem; 
     margin-top: -5px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
 }
 
 .header-description {
-    font-size: 1.2rem; /* Increased size */
+    font-size: 1.2rem; 
     margin-top: 10px;
     color: white;
 }
 
-/* Card Styling - Larger for desktop */
+
 .card {
     margin-bottom: 2rem;
     background-color: #111;
     color: white;
     border: 1px solid #333;
-    height: 100%; /* Makes all cards the same height */
+    height: 100%; 
     transition: transform 0.3s ease;
 }
 
@@ -88,17 +88,17 @@ body {
 }
 
 .card-img-top {
-    height: 220px; /* Fixed height for images */
+    height: 220px; 
     object-fit: cover;
 }
 
 .card-body {
-    padding: 25px; /* More padding inside cards */
+    padding: 25px; 
 }
 
 .card-title {
     color: white;
-    font-size: 1.5rem; /* Larger title */
+    font-size: 1.5rem; 
     margin-bottom: 15px;
 }
 
@@ -161,7 +161,7 @@ body {
     align-items: center;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1200px) {
     .header-container {
         height: 450px;
