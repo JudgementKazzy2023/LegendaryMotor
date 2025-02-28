@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Website with Bootstrap Cards</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header-container">
+        <img src="images/Car.jpg" alt="Header Image" class="header-image">
+        <div class="header-overlay">
+            <h1 class="header-title">Legendary Motorsport</h1>
+            <h2 class="header-subtitle">PREMIUM PRODUCTS</h2>
+            <p class="header-description">Check out our featured items below</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/CAR1.jpg" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lamborghini Sesto Elemento</h5>
+                        <p class="card-text">The Sesto Elemento is a masterpiece of extreme lightweight engineering that demonstrates the outstanding expertise of Automobili Lamborghini in all areas of carbon-fiber technology.</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/CAR2.jpeg" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pagani Zonda F</h5>
+                        <p class="card-text">The Pagani Zonda F was designed to reflect the shared philosophy between Horacio Pagani and world champion race driver Juan Manuel Fangio, which entails a commitment to a mission, a vision and a goal without neglecting essential concepts such as lightness, safety, performance and inventiveness.</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/CAR3.jpg" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Koenigsegg Agera RS</h5>
+                        <p class="card-text">The Agera RS is the ultimate in road and track versatility. It
+                            offers extreme performance and is fully road-legal, complying
+                            with safety standards, emissions and homologation
+                            requirements worldwide. It uses advanced technology
+                            developed during our Koenigsegg One:1 program while
+                            maintaining all the functionality of previous S and R models.</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2025 Legendary Motorsport. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Card Detail Script -->
+    <script src="script.js"></script>
+</body>
+</html>
